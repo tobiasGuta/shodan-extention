@@ -8,19 +8,16 @@ How it works
 - Queries Shodan host API and displays IP, organization, open ports, hostnames, tags, and OS.
 
 Files
-- `manifest.json` — extension manifest
-- `popup.html`, `popup.js` — popup UI & logic
-- `options.html`, `options.js` — API key management
-- `background.js` — service worker (basic handlers)
+- `manifest.json` extension manifest
+- `popup.html`, `popup.js` popup UI & logic
+- `options.html`, `options.js` API key management
+- `background.js` service worker (basic handlers)
 
 Load in Firefox (temporary)
 1. Open `about:debugging#/runtime/this-firefox`.
 2. Click "Load Temporary Add-on" and choose `manifest.json` inside this folder.
 3. Open Options from the extension entry to set your Shodan API key.
 
-Dev with `web-ext`
-1. Install `web-ext`: `npm install --global web-ext`
-2. Run: `web-ext run --source-dir=/path/to/shodanextention`
 
 Notes
 - Do NOT hardcode your API key. Save it via Options.
